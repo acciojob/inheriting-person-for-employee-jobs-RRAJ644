@@ -4,8 +4,9 @@ function Person(name, age) {
   this.age = age;
 }
 
+// Update greet method to match expected output in the Cypress test
 Person.prototype.greet = function () {
-  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+  console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 };
 
 // Define the Employee class, inheriting from Person
